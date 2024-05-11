@@ -26,42 +26,54 @@ Geospatial analysis is performed to visualize the distribution of sourcing costs
 
 In this project, we employ various machine learning algorithms to predict sourcing costs. Here's a breakdown of the steps involved:
 
-1. Model Selection
-We consider several regression algorithms suitable for this task:
+1. Model Selection:
 
-  Gradient Boosting Regressor: A powerful ensemble learning technique that builds models sequentially, each one correcting the errors of its predecessor.
+   We consider several regression algorithms suitable for this task:
 
-  Random Forest Regressor: Utilizes a multitude of decision trees to reduce overfitting and improve accuracy.
+   Gradient Boosting Regressor:A powerful ensemble learning technique that builds models sequentially, each one correcting the errors of its predecessor.
 
-  XGBoost Regressor: An optimized gradient boosting library known for its speed and performance.
+   Random Forest Regressor: Utilizes a multitude of decision trees to reduce overfitting and improve accuracy.
 
-  Decision Tree Regressor: A simple yet effective model that partitions the data recursively based on feature splits.
+   XGBoost Regressor: An optimized gradient boosting library known for its speed and performance.
 
-2. Training
-Each model is trained using the training dataset, which contains historical data on sourcing costs. During training, the algorithm learns the patterns and relationships within the data to make accurate predictions.
+   Decision Tree Regressor: A simple yet effective model that partitions the data recursively based on feature splits.
 
-3. Hyperparameter Tuning
-Hyperparameters are parameters that are not directly learned by the model during training but rather set beforehand. We fine-tune these hyperparameters to optimize the performance of each model. Techniques such as grid search or random search can be employed for this purpose.
+3. Training:
 
-4. Evaluation Metrics
-To assess the performance of each model, we use the following evaluation metrics:
+   Each model is trained using the training dataset, which contains historical data on sourcing costs. During training, the algorithm learns the patterns and relationships within the data to make accurate
+   predictions.
 
-  Mean Absolute Error (MAE): Represents the average absolute difference between the predicted and actual values. It provides a measure of the average magnitude of errors in the predictions.
+4. Hyperparameter Tuning:
 
-  Mean Squared Error (MSE): Calculates the average of the squares of the errors between the predicted and actual values. It penalizes larger errors more heavily than MAE, making it sensitive to outliers.
+   Hyperparameters are parameters that are not directly learned by the model during training but rather set beforehand. We fine-tune these hyperparameters to optimize the performance of each model. Techniques 
+   such as grid search or random search can be employed for this purpose.
 
-5. Cross-Validation
-To ensure the robustness of our models and avoid overfitting, we perform cross-validation. This technique involves splitting the training data into multiple subsets, training the model on different combinations of these subsets, and evaluating its performance on the remaining data.
+6. Evaluation Metrics:
 
-6. Model Comparison
-After training and evaluating each model, we compare their performance based on the evaluation metrics. This comparison helps us identify the best-performing algorithm for the task of sourcing cost prediction.
+   To assess the performance of each model, we use the following evaluation metrics:
 
-7. Final Model Selection
-Based on the evaluation results, we select the most suitable model for forecasting sourcing costs. The selected model is then used to make predictions on the test dataset for future periods.
+   Mean Absolute Error (MAE):
+   Represents the average absolute difference between the predicted and actual values. It provides a measure of the average magnitude of errors in the predictions.
 
-Future Work
+   Mean Squared Error (MSE):
+   Calculates the average of the squares of the errors between the predicted and actual values. It penalizes larger errors more heavily than MAE, making it sensitive to outliers.
+
+5. Cross-Validation:
+
+   To ensure the robustness of our models and avoid overfitting, we perform cross-validation. This technique involves splitting the training data into multiple subsets, training the model on different 
+   combinations of these subsets, and evaluating its performance on the remaining data.
+
+
+7. Model Comparison:
+
+   After training and evaluating each model, we compare their performance based on the evaluation metrics. This comparison helps us identify the best-performing algorithm for the task of sourcing cost prediction.
+
+8. Final Model Selection:
+
+   Based on the evaluation results, we select the most suitable model for forecasting sourcing costs. The selected model is then used to make predictions on the test dataset for future periods.
+
+# Future Work
 While the current models provide accurate predictions for sourcing costs, there are opportunities for further improvement. Future work may involve:
-
 Feature engineering: Exploring additional features or transformations to enhance model performance.
 
 Advanced algorithms: Experimenting with more sophisticated machine learning techniques, such as neural networks or ensemble methods.
