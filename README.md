@@ -8,9 +8,13 @@ Welcome to the A.P.-Moller-Maersk AIML Assessment Project! This repository conta
 The project utilizes several Python libraries for data analysis, visualization, and machine learning:
 
 Pandas: For data manipulation and analysis.
+
 Seaborn and Matplotlib: For data visualization.
+
 Plotly Express: For interactive visualizations.
+
 Scikit-learn: For machine learning algorithms.
+
 XGBoost: For gradient boosting algorithms.
 
 # Analysis and Visualization
@@ -26,9 +30,13 @@ In this project, we employ various machine learning algorithms to predict sourci
 We consider several regression algorithms suitable for this task:
 
 Gradient Boosting Regressor: A powerful ensemble learning technique that builds models sequentially, each one correcting the errors of its predecessor.
+
 Random Forest Regressor: Utilizes a multitude of decision trees to reduce overfitting and improve accuracy.
+
 XGBoost Regressor: An optimized gradient boosting library known for its speed and performance.
+
 Decision Tree Regressor: A simple yet effective model that partitions the data recursively based on feature splits.
+
 2. Training
 Each model is trained using the training dataset, which contains historical data on sourcing costs. During training, the algorithm learns the patterns and relationships within the data to make accurate predictions.
 
@@ -39,7 +47,9 @@ Hyperparameters are parameters that are not directly learned by the model during
 To assess the performance of each model, we use the following evaluation metrics:
 
 Mean Absolute Error (MAE): Represents the average absolute difference between the predicted and actual values. It provides a measure of the average magnitude of errors in the predictions.
+
 Mean Squared Error (MSE): Calculates the average of the squares of the errors between the predicted and actual values. It penalizes larger errors more heavily than MAE, making it sensitive to outliers.
+
 5. Cross-Validation
 To ensure the robustness of our models and avoid overfitting, we perform cross-validation. This technique involves splitting the training data into multiple subsets, training the model on different combinations of these subsets, and evaluating its performance on the remaining data.
 
@@ -53,8 +63,11 @@ Future Work
 While the current models provide accurate predictions for sourcing costs, there are opportunities for further improvement. Future work may involve:
 
 Feature engineering: Exploring additional features or transformations to enhance model performance.
+
 Advanced algorithms: Experimenting with more sophisticated machine learning techniques, such as neural networks or ensemble methods.
+
 Incorporating external data: Integrating external datasets, such as economic indicators or market trends, to capture additional factors influencing sourcing costs.
+
 By continuously refining our models and techniques, we aim to develop robust and accurate forecasting models for sourcing cost prediction.
 
 # Forecasting
