@@ -26,7 +26,7 @@ Geospatial analysis is performed to visualize the distribution of sourcing costs
 
 In this project, we employ various machine learning algorithms to predict sourcing costs. Here's a breakdown of the steps involved:
 
-1. Model Selection:
+## 1. Model Selection:
 
    We consider several regression algorithms suitable for this task:
 
