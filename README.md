@@ -26,7 +26,7 @@ Geospatial analysis is performed to visualize the distribution of sourcing costs
 
 In this project, we employ various machine learning algorithms to predict sourcing costs. Here's a breakdown of the steps involved:
 
-## 1. Model Selection:
+## 1. Model Selection :
 
    We consider several regression algorithms suitable for this task:
 
@@ -38,17 +38,12 @@ In this project, we employ various machine learning algorithms to predict sourci
 
    Decision Tree Regressor: A simple yet effective model that partitions the data recursively based on feature splits.
 
-3. Training:
+## 2. Training :
 
    Each model is trained using the training dataset, which contains historical data on sourcing costs. During training, the algorithm learns the patterns and relationships within the data to make accurate
    predictions.
 
-4. Hyperparameter Tuning:
-
-   Hyperparameters are parameters that are not directly learned by the model during training but rather set beforehand. We fine-tune these hyperparameters to optimize the performance of each model. Techniques 
-   such as grid search or random search can be employed for this purpose.
-
-6. Evaluation Metrics:
+## 3. Evaluation Metrics :
 
    To assess the performance of each model, we use the following evaluation metrics:
 
@@ -58,17 +53,11 @@ In this project, we employ various machine learning algorithms to predict sourci
    Mean Squared Error (MSE):
    Calculates the average of the squares of the errors between the predicted and actual values. It penalizes larger errors more heavily than MAE, making it sensitive to outliers.
 
-5. Cross-Validation:
-
-   To ensure the robustness of our models and avoid overfitting, we perform cross-validation. This technique involves splitting the training data into multiple subsets, training the model on different 
-   combinations of these subsets, and evaluating its performance on the remaining data.
-
-
-7. Model Comparison:
+## 4. Model Comparison :
 
    After training and evaluating each model, we compare their performance based on the evaluation metrics. This comparison helps us identify the best-performing algorithm for the task of sourcing cost prediction.
 
-8. Final Model Selection:
+## 5. Final Model Selection :
 
    Based on the evaluation results, we select the most suitable model for forecasting sourcing costs. The selected model is then used to make predictions on the test dataset for future periods.
 
